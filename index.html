@@ -1,0 +1,311 @@
+<html><head><meta name="viewport" content="width=device-width, initial-scale=1"><link href=//fonts.googleapis.com/css?family=Raleway:400,300,600 rel=stylesheet type=text/css><link rel="stylesheet" type="text/css" href="../common/css/normalize.css"><link rel="stylesheet" type="text/css" href="../common/css/skeleton.css"><link rel="stylesheet" type="text/css" href="../common/css/wiki.css"><script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><title>Small e-Paper Shield</title><meta charset="utf-8"/></head><body><div class"container"><a href="../"><img src="../common/logo.png"/></a></div><div class="mw-content-ltr container" dir="ltr" id="mw-content-text" lang="en"><h1>Small e-Paper Shield</h1>
+
+<p>e-Paper might be the most comfortable material to read. It reflects light instead of emitting light to mimic the experience of conventional paper reading. And in this way much less power is consumed. The Small e-paper shield is a driver shield for e-paper of small sizes. It's capable of driving e-papers of 1.44 inch, 2.0 inch and 2.7 inch and supports more than 170 languages. The upper surface of this shield is left flat and clean to give great support to the e-paper attached to it. If you are considering a lightweight and comfortable to read display, e-paper would be a good choice.
+</p><p><b>Attention:</b> Since this driver board supports e-papers of different sizes. e-paper is not included in this product. We have e-paper of 2.0 inch and 2.7 inch on sale simultaneously. Go and add the most suitable one to your cart now!
+</p><p><b>Model:</b> <a href="http://www.seeedstudio.com/depot/small-epaper-shield-p-1597.html">SLD00200P</a><br/>
+</p>
+<center><img src="img/E_shield_01.jpg" width="550"/> <img src="img/E_shield_02.jpg" width="550"/></center>
+<p><br/>
+</p>
+<h3> Choose the library</h3>
+<p>In order to choose the correct library you should know the version of your panel.
+</p><p><img src="img/Definition_of_Model_Labels.jpg" width="850"/>
+</p><p><b>Pay attention to your panel's label</b>:
+</p>
+<ul><li> if the model name is 'EG020AS012' or 'EM027AS011',then you should choose the old library, please click here <a href="https://github.com/Seeed-Studio/Small_ePaper_Shield">Small e-Paper Library</a>.
+</li><li> if the model name is 'EG020BS011' or 'EM027BS013',then you should choose the new library,please click here <a href="res/EPDV230.zip">New Panel Library【EPD_V230】</a>.
+</li></ul>
+<h2> Specifications</h2>
+<ul><li>Compatible board: Arduino Uno/Leonardo/Arduino Mega
+</li><li>Operating Voltage: 3.3/5VDC
+</li><li>Operating Current(refresh screen):40mA
+</li><li>Interface Type: SPI
+</li></ul>
+<p><font color="Green">
+</font></p>
+<h3> PINs on Arduino</h3>
+<p>
+</p><p><br/>
+</p>
+<table >
+<tr>
+<th> Arduino
+</th>
+<th> E-paper
+</th></tr>
+<tr>
+<td width="150px"> D2
+</td>
+<td width="250px"> M_EPD_PANEL_ON﻿
+</td></tr>
+<tr>
+<td> D3
+</td>
+<td> M_EPD_BORDER﻿
+</td></tr>
+<tr>
+<td> D4
+</td>
+<td> M_/SD_CS﻿
+</td></tr>
+<tr>
+<td> D5
+</td>
+<td> M_EPD_PWM﻿
+</td></tr>
+<tr>
+<td> D6
+</td>
+<td> M_EPD_/RESET﻿
+</td></tr>
+<tr>
+<td> D7
+</td>
+<td> M_EPD_BUSY﻿
+</td></tr>
+<tr>
+<td> D8
+</td>
+<td> M_EPD_DISCHARGE﻿
+</td></tr>
+<tr>
+<td> D9
+</td>
+<td> M_/WORD_STOCK_CS﻿
+</td></tr>
+<tr>
+<td> D10
+</td>
+<td> M_/EPD_CS﻿
+</td></tr>
+<tr>
+<td> ICSP PORT
+</td>
+<td> M_MOSI , M_SCK , M_MISO﻿
+</td></tr>
+<tr>
+<td> A0
+</td>
+<td> M_TEMP_SEN﻿
+</td></tr>
+<tr>
+<td> A1
+</td>
+<td> M_OE123﻿﻿
+</td></tr>
+<tr>
+<td> A2
+</td>
+<td> M_CKV﻿
+</td></tr>
+<tr>
+<td> A3
+</td>
+<td> M_STV_IN﻿
+</td></tr>
+<tr>
+<td> 3.3V
+</td>
+<td> M_VCC_3V3﻿
+</td></tr>
+<tr>
+<td> 5V
+</td>
+<td> M_VCC_5V
+</td></tr></table>
+<h2> Demonstration</h2>
+<p>Small e-Paper Shield can display image, a variety of graphics and texts. There are plenty of examples in library that give you some ideas on how to use the module. Now let us experience the strong library and wide viewing angle of e-Paper. 
+</p>
+<h3> Hardware Installation</h3>
+<ul><li>Connect e-Paper to the FFC interface of Small e-Paper Shield. 
+</li><li>Plug Small e-Paper Shield to Arduino/Seeeduino and connect it to PC using a USB cable.
+</li></ul>
+<p><img src="img/E-Paper_Screen.jpg" width="600"/>
+</p><p>Now it is time to show demos using the library which needs download from <a href="https://github.com/Seeed-Studio/ePaper">here</a>. After downloading, you need put it into the library file of Arduino IDE by the path:...\arduino-1.0.1\libraries.
+</p><p><br/>
+</p>
+<h3> Demo Showing</h3>
+<p>Here we select the 2.0 inch screen as an example to show its display functions.
+</p>
+<h4> Demo 1: Display texts</h4>
+<ul><li>Open the code: File -&gt; Examples -&gt; ePaper -&gt; text as show below:
+</li></ul>
+<p><img src="img/Text_Code.jpg" width="600"/>
+</p>
+<dl><dd><font color="red">We need to re-emphasize this note:</font>
+</dd></dl>
+<dl><dd>If you use Arduino UNO, Seeeduino 3.0 and any board that uses Atmega 328P or Atmega32U4 as controller, you should insert an SD card using this demo. The SD card is used to store temporary data because of the little storage space of Atmega328p and Atmega32U4.
+</dd><dd>If you use an Arduino Mega, or any other board that uses Atmega1280 or Atmega2560, you don't need to insert an SD card.
+</dd></dl>
+<ul><li>Change the parameter to match your screen size. You need to change 200 to 270 if your screen is 2.7 inch. And you need to do this change when usisng other examples.
+</li></ul>
+<pre>#define SCREEN_SIZE 200 // choose screen size: 144, 200, 270</pre>
+<ul><li>Upload the code to your microcontroller. Please click <a href="/Upload_Code">here</a> if you do not know how to.
+</li><li>Now you can see this:
+</li></ul>
+<p><img src="img/Display_text.jpg" width="600"/>
+</p>
+<ul><li>Try to change the display text and display location. You may learn every function usage.
+</li></ul>
+<h4> Demo 2: Display graphic</h4>
+<p>The example: <i>draw</i> will be a good example to display a variety of graphics. You need to open this code: <i>draw</i> like demo 1. Remember the note about whether you need a SD card to complete the demo. Please make sure the SD card is needed or not, depending on your microcontroller type. And change the parameter to match your screen size.
+</p><p>After completing modifications and uploading the code, a beautiful pattern will display on the screen:
+</p><p><img src="img/Display_graphic.jpg" width="600"/>
+</p><p>The picture is created by calling the draw graphic functions. You can make your pattern and try it on the screen. Every draw function has a specific description in the reference.
+</p><p><br/>
+</p>
+<h4> Demo 3: Display image</h4>
+<p>Similar to TFT displays and OLED displays, the small e-Paper Shield supports displaying images.
+</p><p>Now you need to open the image example: File -&gt; Examples -&gt; ePaper -&gt; image.
+</p><p>You need to upload the code to see the result.
+</p><p><img src="img/Dispaly_image.jpg" width="600"/>
+</p><p><b>Note：As you can see, the default screen size in this "image" sketch is set as 2.7 inch. Please modify the screen size setting in case of improper display.</b>
+</p>
+<pre>  #define SCREEN_SIZE 200         // choose screen size here: 144, 200, 270 </pre>
+<p>Of course, you can change the display image by changing the image's lattice data.
+</p><p>For example, if your e-Paper screen is 2.7 inch, you need to provide the lattice data of 264 X 176 pixel and copy the code to ‘’’static unsigned char image_270[] PROGMEM ={}’’’ in picture.h.
+You need to copy the code for a lattice data of a 200x96 pixel to ‘’’static unsigned char image_200[] PROGMEM ={}’’’  when using a 2.0 inch screen.
+</p>
+<h4> How to Display an Image</h4>
+<p>Thanks to a contribution by Muchiri John, we got a very useful and easy-to-use tool. With this tool, displaying an image is no longer difficult. 
+</p><p>You can download the tool <a href="res/EpdImageKit.zip">here</a>
+</p><p><img src="img/Snapshot_epaper_shied_tools.jpg" width="600"/>
+</p>
+<h2> Reference</h2>
+<p>Small e-Paper library provides complete software interfaces to exercise the capabilities of e-Paper display. There are  specific description about functions.
+</p>
+<h3> Function Description</h3>
+<p><u>1. void begin(EPD_size sz);</u>
+</p><p><i>This function is setup screen size.</i>
+</p>
+<ul><li>sz: can be EPD_1_44, EPD_2_0, EPD_2_7.
+</li></ul>
+<p><u>2. void setDirection(EPD_DIR dir);</u>
+</p><p><i>This function is used to set the display direction.</i>
+</p>
+<ul><li>dir: can be DIRLEFT,DIRRIGHT,DIRNORMAL,DIRDOWN
+</li></ul>
+<p><u>3. int drawChar(char c, int x, int y);</u>
+</p><p><i>This function can be used to display char.</i>
+</p>
+<ul><li>c: the char you want to display.
+</li><li>x: the starting X-coordinate of char.
+</li><li>y: the starting Y-coordinate of char.
+</li></ul>
+<p><u>4. int drawString(char *string, int poX, int poY);</u>
+</p><p><i>This function can be used to display char.</i>
+</p>
+<ul><li> *string: the string you want to display.
+</li><li> poX: the starting X-coordinate of string.
+</li><li> poY: the starting Y-coordinate of string.
+</li></ul>
+<p><u>5. int drawNumber(long long_num,int poX, int poY);</u>
+</p><p><i>This function can be used to display char.</i>
+</p>
+<ul><li> long_num: the long integer data you want to display. The max is
+</li><li> poX: the starting X-coordinate of data
+</li><li> poY: the starting Y-coordinate of data
+</li></ul>
+<p><u>6. int drawFloat(float floatNumber,int decimal,int poX, int poY);</u>
+</p><p><i>This function can be used to display float number. The display float data is rounding according to the setting decimal place.</i>
+</p>
+<ul><li> floatNumber: the float number you want to display.
+</li><li> decimal: set the decimal place.
+</li><li> poX: the starting X-coordinate of data.
+</li><li> poY: the starting Y-coordinate of data.
+</li></ul>
+<p><u>7. int drawUnicode(unsigned int uniCode, int x, int y);</u>
+</p><p><i>This function can be used to display a Character or a Chinese using unicode. See the page 18 to 24 of the <a href="res/GT20L16P1Y_Datasheet.pdf">GT20L16P1Y datasheet</a> to find the Char unicode, the characters include Latin、Hebrew、 Thai、Greek、 Kirill and Arabic. The Chinese unicode  can see <a href="res/Character_code_table.pdf">GB2312 (Simplified Chinese) character code table</a>. </i>
+</p>
+<ul><li> uniCode:the machine code according to a character or a chinese.
+</li><li> x: the starting X-coordinate.
+</li><li> y: the starting Y-coordinate.
+</li></ul>
+<p>Note: the character unicode between 0x0020 to 0x007E can directly input via the keyboard. Such as the display of the character 'G' ,the function can be drawUnicode(0x0047, 3,10) or displayChar ('s',3,10);
+</p><p><br/>
+<u>8. int drawUnicodeString(unsigned int *uniCode, int len, int x, int y);</u>
+</p><p><i>This function can be used to display several characters and chinese. </i>
+</p>
+<ul><li> *uniCode: a unicode array.
+</li><li> len: string length.
+</li><li> x: the starting X-coordinate of string.
+</li><li> y: the starting Y-coordinate of string.
+</li></ul>
+<p><u>9. void drawLine(int x0, int y0, int x1, int y1);</u>
+</p><p><i>This function can be used to display a line. </i>
+</p>
+<ul><li> x0: the starting X-coordinate of line
+</li><li> y0: the starting Y-coordinate of line
+</li><li> x1: the end X-coordinate of line
+</li><li> y1: the end Y-coordinate of line
+</li></ul>
+<p><u>10. void drawCircle(int poX, int poY, int r);</u>
+</p><p><i>This function can be used to draw a circle. </i>
+</p>
+<ul><li> poX: the X-coordinate of the center
+</li><li> poY: the Y-coordinate of the center 
+</li><li> r: the radius of center
+</li></ul>
+<p><br/>
+<u>11. void drawHorizontalLine( int poX, int poY, int len);</u>
+</p><p><i>This function can be used to draw a horizontal line.</i>
+</p>
+<ul><li> poX: the starting X-coordinate of the line.
+</li><li> poY: the starting Y-coordinate of the line.
+</li><li> len: the length of the line
+</li></ul>
+<p><u>12. void drawVerticalLine( int poX, int poY, int len);</u>
+</p><p><i>This function can be used to draw a vertical line.</i>
+</p>
+<ul><li> poX: the starting X-coordinate of the Line.
+</li><li> poY: the starting Y-coordinate of the Line.
+</li><li> len: the length of the line.
+</li></ul>
+<p><u>13. void drawRectangle(int poX, int poY, int len, int width);</u>
+</p><p><i>This function can be used to draw a rectangle.</i>
+</p>
+<ul><li> poX: the starting X-coordinate of the rectangle.
+</li><li> poY: the starting Y-coordinate of the rectangle.
+</li><li> len: the length of the rectangle.
+</li><li> width: the width of the rectangle.
+</li></ul>
+<p><u>14. void fillRectangle(int poX, int poY, int len, int width);</u>
+</p><p><i>This function can be used to draw a fill rectangle.</i>
+</p>
+<ul><li> poX: the starting X-coordinate of the rectangle.
+</li><li> poY: the starting Y-coordinate of the rectangle.
+</li><li> len: the length of the rectangle.
+</li><li> width: the width of the rectangle.
+</li></ul>
+<p><u>15. void fillCircle(int poX, int poY, int r);</u>
+</p><p><i>This function can be used to draw a fill circle. </i>
+</p>
+<ul><li> poX: the X-coordinate of the center.
+</li><li> poY: the Y-coordinate of the center.
+</li><li> r: the radius of center
+</li></ul>
+<p><b>Example:</b>
+</p>
+<pre> 
+    EPAPER.drawRectangle(10, 10, 100, 80);
+    EPAPER.fillCircle(50, 50, 30);
+    EPAPER.fillRectangle(50, 65, 50, 20);
+    EPAPER.drawCircle(150, 50, 10);
+    EPAPER.fillCircle(150, 50, 5);
+    EPAPER.drawHorizontalLine(120, 50, 60);
+    EPAPER.drawVerticalLine(150, 20, 60);</pre>
+<p><br/>
+<u>16. void drawTraingle( int poX1, int poY1, int poX2, int poY2, int poX3, int poY3);</u>
+</p><p><i>This function can be used to draw a triangle. It is formed by three points.</i>
+</p>
+<ul><li> poX1(poX2,poX3): the X-coordinate of the triangle one point.
+</li><li> poY1(poY2,poY3): the Y-coordinate of the triangle one point.
+</li></ul>
+<h2> Resources</h2>
+<ul><li><a href="res/Small_e-Paper_Shield_V2.1.zip">Small e-Paper Shield Eagle File</a>
+</li><li><a href="https://github.com/Seeed-Studio/Small_ePaper_Shield">Small e-Paper Library</a>
+</li><li><a href="res/4P008-00_02_COG_Driver_Interface_Timing_for_smallPlussize.pdf">e-Paper panels Datasheet</a>
+</li><li><a href="res/EpdImageKit.zip">epdImageKit Tool</a>
+</li><li><a href="res/EPDV230.zip">New Panel Library【EPD_V230】</a>
+</li></ul>
+Copyright (c) 2008-2016 Seeed Development Limited (<a href="http://www.seeedstudio.com">www.seeedstudio.com</a> / <a href="http://www.seeed.cc">www.seeed.cc</a>)<h6>This static html page was created from http://www.seeedstudio.com/wiki</h6></div></body></html>
